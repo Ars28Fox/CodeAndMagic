@@ -183,29 +183,30 @@
 
 <script>
   
-  var fireballSize = 22;
-  var wizardSpeed = 3;
-  var wizardWidth = 70;
+  let fireballSize = 22;
+  let wizardSpeed = 3;
+  let wizardWidth = 70;
 
-  var getFireballSpeed = function (left) {
+  let getFireballSpeed = function (left) {
     return left ? 5 : 2;
   };
 
-  var getWizardHeigth = function () {
+  let getWizardHeigth = function () {
     return wizardWidth * 1.337;
   };
 
-  var wizardHeight = getWizardHeigth();
+  let wizardHeight = getWizardHeigth();
 
-  var getWizardX = function (width) {
+  let getWizardX = function (width) {
     return (width / 2) - (wizardWidth / 2);
   };
 
-  var getWizardY = function (height) {
+  let getWizardY = function (height) {
     return (height - wizardHeight) * (2 / 3);
   };
 
 </script>
+<script src="js/stat.js"></script>
 <script src="js/game.js"></script>
 
 </body>
